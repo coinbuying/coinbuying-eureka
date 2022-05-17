@@ -1,0 +1,16 @@
+
+spring:
+  application:
+    name: Eureka Server
+
+server:
+  port: 8971
+
+eureka:
+  client:
+    service-url:
+      defualtZone: http://localhost:8971/eureka/
+    register-with-eureka: false
+    fetch-registry: false
+  server:
+    enable-self-preservation: true
